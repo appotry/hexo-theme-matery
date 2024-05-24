@@ -14,7 +14,7 @@
 }
 
 /*大屏幕下(桌面类)的样式*/
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 993px) and (max-width: 1920px) {
     .container {
         width: 90%;
         max-width: 1125px;
@@ -26,10 +26,60 @@
         width: 100%;
     }
 
-    .post-container {
+    .post-container { 
         width: 90%;
         margin: 0 auto;
         max-width: 1250px;
+    }
+}
+
+/*大屏幕下(2k桌面类)的样式*/
+@media only screen and (min-width: 1921px) and (max-width: 2560px) {
+    .container {
+        width: 90%;
+        max-width: 1525px;
+    }
+
+    .head-container {
+        position: absolute;
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    .post-container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1750px;
+    }
+
+    .recommend .post-card {
+        height: 350px !important;
+        max-height: 350px !important;
+    }
+}
+
+/*大屏幕下(4k桌面类)的样式*/
+@media only screen and (min-width: 2561px) {
+    .container {
+        width: 90%;
+        max-width: 1525px;
+    }
+
+    .head-container {
+        position: absolute;
+        padding: 0 30px;
+        width: 100%;
+    }
+
+    .post-container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 2250px;
+    }
+
+    .recommend .post-card {
+        height: 380px !important;
+        max-height: 380px !important;
     }
 }
 
